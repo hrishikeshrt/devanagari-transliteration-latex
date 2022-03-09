@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{xspace}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+%\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% Devanagari Related Packages
+\usepackage{fontspec, xunicode, xltxtra}
+
+% Define Fonts
+\newfontfamily\textskt[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\textiast[Script=Latin]{Sanskrit 2003}
+
+% Commands for Devanagari Transliterations
+\newcommand{\skt}[1]{{\textskt{#1}}}
+\newcommand{\iast}[1]{{\textiast{#1}}}
+\newcommand{\Iast}[1]{{\textiast{#1}}}
+\newcommand{\IAST}[1]{{\textiast{#1}}}
+
+\title{Transliteration of Devanagari Text}
+
+\author{Hrishikesh Terdalkar}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/content.tex}
+
+\pagebreak
+
+% include your own bib file like this:
+% \bibliographystyle{acl_natbib}
+\bibliography{papers}
+
+% --------------------------------
+
+\end{document}
+
