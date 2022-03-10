@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% Devanagari Related Packages
+\usepackage{fontspec, xunicode, xltxtra}
+
+% Define Fonts
+\newfontfamily\textskt[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\textiast[Script=Latin]{Sanskrit 2003}
+
+% Commands for Devanagari Transliterations
+\newcommand{\skt}[1]{{\textskt{#1}}}
+\newcommand{\iast}[1]{{\textiast{#1}}}
+\newcommand{\Iast}[1]{{\textiast{#1}}}
+\newcommand{\IAST}[1]{{\textiast{#1}}}
+
+\title{Transliteration of Devanagari Text}
+
+\author{Hrishikesh Terdalkar}
+
+\begin{document}
+
+\maketitle
+
+
+\skt{को न्वस्मिन् साम्प्रतं लोके गुणवान् कश्च वीर्यवान्।}
+
+
+\iast{को न्वस्मिन् साम्प्रतं लोके गुणवान् कश्च वीर्यवान्।}
+
+
+\Iast{को न्वस्मिन् साम्प्रतं लोके गुणवान् कश्च वीर्यवान्।}
+
+
+\IAST{को न्वस्मिन् साम्प्रतं लोके गुणवान् कश्च वीर्यवान्।}
+
+\end{document}
