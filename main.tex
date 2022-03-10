@@ -1,16 +1,5 @@
 \documentclass[10pt]{article}
 
-% Standard package includes
-\usepackage{times}
-\usepackage{latexsym}
-\usepackage{xspace}
-
-% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
-%\usepackage[T1]{fontenc}
-% For Vietnamese characters
-% \usepackage[T5]{fontenc}
-% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
-
 % This assumes your files are encoded as UTF8
 \usepackage[utf8]{inputenc}
 
@@ -35,12 +24,19 @@
 
 \maketitle
 
-\input{sections/content.tex}
+\input{sections/section_devanagari.tex}
+
+\input{sections/section_iast_lower.tex}
+
+\input{sections/section_iast_title.tex}
+
+\input{sections/section_iast_upper.tex}
 
 \pagebreak
 
-% include your own bib file like this:
-% \bibliographystyle{acl_natbib}
+% include your own bib file like this
+\nocite{*}
+\bibliographystyle{acm}
 \bibliography{papers}
 
 % --------------------------------
