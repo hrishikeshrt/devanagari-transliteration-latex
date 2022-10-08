@@ -193,7 +193,7 @@ def clean_whitespaces(input_text: str) -> str:
     str
         Output text after whitespace cleaning
     """
-    _text = re.sub(r"\s+?\n", "\n", input_text)
+    _text = re.sub(r"[\t\r ]+?\n", "\n", input_text)
     _text = re.sub("\n\n+", "\n\n", _text, flags=re.DOTALL)
     return _text
 
