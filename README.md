@@ -24,7 +24,7 @@
 
 % Define Fonts
 \newfontfamily\textskt[Script=Devanagari]{Sanskrit 2003}
-\newfontfamily\textiast[Script=Latin]{Sanskrit 2003}
+\newfontfamily\textiast{Noto Serif}
 
 % Commands for Devanagari Transliterations
 \newcommand{\skt}[1]{{\textskt{#1}}}
