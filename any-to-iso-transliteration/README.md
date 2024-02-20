@@ -55,7 +55,7 @@ xelatex final
 ```
 * Result
 
-![PDF](final.pdf)
+![PDF](minimal.png)
 
 ### Extras
 
@@ -140,6 +140,8 @@ Google Fonts also provides a [wide variety of fonts](https://fonts.google.com/) 
 ├── README.md
 ├── Makefile
 ├── finalize.py
+├── minimal.tex
+├── minimal.png
 ├── main.tex
 ├── sections
 │   ├── introduction.tex
