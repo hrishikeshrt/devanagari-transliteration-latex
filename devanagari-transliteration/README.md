@@ -54,7 +54,7 @@ xelatex final
 
 Additional structure can be added to the LaTeX setup, such as,
 
-* Separation of ontent into multiple files
+* Separation of content into multiple files
 
 ```latex
 \input{sections/section_devanagari.tex}
